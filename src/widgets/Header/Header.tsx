@@ -1,10 +1,11 @@
 import { Montserrat } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Logo, Telegram, Viber, Whatsapp } from '@/shared/assets';
+import { Logo } from '@/shared/assets';
 import { AppRoutes } from '@/shared/config/routes/appRoutes';
 import { cn } from '@/shared/lib/classNames/classNames';
 import { AppLink } from '@/shared/ui/AppLink/AppLink';
+import SocialLinks from '@/shared/ui/SocialLinks/SocialLinks';
 import cls from './Header.module.scss';
 
 const montserrat = Montserrat({ subsets: ['cyrillic'] });
@@ -31,17 +32,7 @@ const Header = ({ className }: HeaderProps) => {
 			</nav>
 			<menu className={cls.menu}>
 				<Link href="tel:+75555555555">+7 555 555-55-55</Link>
-				<div className={cls.menuIcons}>
-					<Link href="https://telegram-link">
-						<Image src={Telegram} alt="Telegram" width={20} height={20} />
-					</Link>
-					<Link href="https://viber-link">
-						<Image src={Viber} alt="Viber" width={20} height={20} />
-					</Link>
-					<Link href="https://whatsapp-link">
-						<Image src={Whatsapp} alt="WhatsApp" width={20} height={20} />
-					</Link>
-				</div>
+				<SocialLinks />
 			</menu>
 		</header>
 	);

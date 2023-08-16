@@ -13,7 +13,7 @@ const WelbexInfo = ({ className }: WelbexInfoProps) => {
 	return (
 		<div className={cn(cls.WelbexInfo, [className])}>
 			<h4 className={cls.title}>
-				Вместе с
+				Вместе с{' '}
 				<span className={cls.titleAccent}>бесплатной консультацией</span> мы
 				дарим:
 			</h4>

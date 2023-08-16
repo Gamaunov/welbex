@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { ReactNode } from 'react';
+import Footer from '@/widgets/Footer/Footer';
 import Header from '@/widgets/Header/Header';
 import { cn } from '@/shared/lib/classNames/classNames';
 import './styles/global.scss';
@@ -18,6 +19,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 			<body className={cn(inter.className, [])}>
 				<Header />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);

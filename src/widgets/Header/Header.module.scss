@@ -1,7 +1,6 @@
 .Header,
 .nav,
-.menu,
-.menuIcons{
+.menu{
   display: flex;
   align-items: center;
 }
@@ -58,7 +57,5 @@
   }
 }
 
-.menuIcons{
-  gap: 30px;
-}
+
 
