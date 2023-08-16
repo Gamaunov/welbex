@@ -1,12 +1,11 @@
 import type { Metadata } from 'next';
-import { Inter, Montserrat } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import { ReactNode } from 'react';
+import Header from '@/widgets/Header/Header';
 import { cn } from '@/shared/lib/classNames/classNames';
 import './styles/global.scss';
-import Header from "@/widgets/Header/Header";
 
-const inter = Inter({ subsets: ['latin'] });
-const montserrat = Montserrat({ subsets: ['latin'] });
+const inter = Inter({ subsets: ['cyrillic'] });
 
 export const metadata: Metadata = {
 	title: 'welbex',
@@ -16,9 +15,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
 	return (
 		<html lang="en">
-			<body className={cn(inter.className, [montserrat.className])}>
+			<body className={cn(inter.className, [])}>
 				<Header />
-			{children}
+				{children}
 			</body>
 		</html>
 	);

@@ -2,12 +2,19 @@
   --bg: #0E1014;
   --primary: #E4E5EA;
   --gray: #656566;
-  --main-gradient: #FCB045, #FF3F78;
+  --sky:#4077F3;;
+  --main-gradient: linear-gradient(#FCB045, #FF3F78);
+  --item-gradient: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
   --text-small: 10px;
   --text-xs: 12px;
+  --text-xs-plus: 13px;
   --text-base: 16px;
   --text-lg: 18px;
+  --text-title: 48px;
+  --text-title-md: 36px;
+
   --w-regular: 400;
   --w-light: 300;
   --w-medium: 500;
+  --w-bold: 900;
 }

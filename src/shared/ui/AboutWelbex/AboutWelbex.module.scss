@@ -1,0 +1,22 @@
+.title{
+  font-size: var(--text-title);
+  max-width: 362px;
+  font-weight: var(--w-regular);
+  @media (max-width: 768px) {
+    font-size: var(--text-title-md);
+  }
+}
+
+.titleAccent{
+  display: block;
+  background: var(--main-gradient);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: var(--w-bold);
+  margin-bottom: 30px;
+}
+
+.titleInfo{
+  max-width: 275px;
+  font-size: var(--text-lg);
+}
