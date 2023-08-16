@@ -1,0 +1,16 @@
+.Button {
+    cursor: pointer;
+    background-color: transparent;
+    &:hover {
+        opacity: .8;
+    }
+}
+
+.disabled {
+    opacity: 0.5;
+}
+
+.appButton{
+
+}
+

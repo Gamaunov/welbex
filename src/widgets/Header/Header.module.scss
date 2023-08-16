@@ -1,0 +1,64 @@
+.Header,
+.nav,
+.menu,
+.menuIcons{
+  display: flex;
+  align-items: center;
+}
+
+.Header{
+  max-width: 1160px;
+  padding: 0 20px;
+  margin: 45px auto 105px;
+  justify-content: space-between;
+  @media (max-width: 1080px) {
+    justify-content: center;
+  }
+  @media (max-width: 1080px) {
+    background-color: var(--bg);
+    margin: 0 auto 0;
+    padding: 20px 15px;
+  }
+}
+
+.logo{
+  @media (max-width: 1080px) {
+    display: none;
+  }
+}
+
+.logoText{
+  margin-top: 10px;
+  max-width: 140px;
+  font-weight: var(--w-light);
+  font-size: var(--text-small);
+}
+
+.nav{
+  gap: 30px;
+  margin-left: -20px;
+  @media (max-width: 1080px) {
+    margin-left: 0;
+    text-transform: uppercase;
+  }
+  @media (max-width: 768px) {
+    font-size: var(--text-xs);
+    gap: 10px;
+  }
+  @media (max-width: 460px) {
+    font-size: var(--text-small);
+    gap: 5px;
+  }
+}
+
+.menu{
+  gap: 45px;
+  @media (max-width: 1080px) {
+    display: none;
+  }
+}
+
+.menuIcons{
+  gap: 30px;
+}
+

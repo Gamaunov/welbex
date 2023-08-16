@@ -2,12 +2,13 @@
 @import "variables";
 
 body {
-  color: var(--text-dark);
+  color: var(--primary);
   background-color: var(--bg);
   height: 100vh;
-  font-size: var(--text-main);
+  font-family: 'Inter', sans-serif;
+  font-size: var(--text-base);
   font-style: normal;
-  font-weight: var(--w-bold);
+  font-weight: var(--w-regular);
   line-height: normal;
 }
 
