@@ -11,7 +11,7 @@ interface SocialLinksProps {
 const SocialLinks = ({ className }: SocialLinksProps) => {
 	return (
 		<div className={cn(cls.SocialLinks, [className])}>
-			<Link href="https://telegram-link">
+			<Link href="https://t.me/id_0_0" target='_blank'>
 				<Image
 					className={cls.icon}
 					src={Telegram}
@@ -20,7 +20,7 @@ const SocialLinks = ({ className }: SocialLinksProps) => {
 					height={20}
 				/>
 			</Link>
-			<Link href="https://viber-link">
+			<Link href="https://viber-link" target='_blank'>
 				<Image
 					className={cls.icon}
 					src={Viber}
@@ -29,7 +29,7 @@ const SocialLinks = ({ className }: SocialLinksProps) => {
 					height={20}
 				/>
 			</Link>
-			<Link href="https://whatsapp-link">
+			<Link href="https://whatsapp-link" target='_blank'>
 				<Image
 					className={cls.icon}
 					src={Whatsapp}
