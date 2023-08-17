@@ -12,13 +12,31 @@ const SocialLinks = ({ className }: SocialLinksProps) => {
 	return (
 		<div className={cn(cls.SocialLinks, [className])}>
 			<Link href="https://telegram-link">
-				<Image src={Telegram} alt="Telegram" width={20} height={20} />
+				<Image
+					className={cls.icon}
+					src={Telegram}
+					alt="Telegram"
+					width={20}
+					height={20}
+				/>
 			</Link>
 			<Link href="https://viber-link">
-				<Image src={Viber} alt="Viber" width={20} height={20} />
+				<Image
+					className={cls.icon}
+					src={Viber}
+					alt="Viber"
+					width={20}
+					height={20}
+				/>
 			</Link>
 			<Link href="https://whatsapp-link">
-				<Image src={Whatsapp} alt="WhatsApp" width={20} height={20} />
+				<Image
+					className={cls.icon}
+					src={Whatsapp}
+					alt="WhatsApp"
+					width={20}
+					height={20}
+				/>
 			</Link>
 		</div>
 	);

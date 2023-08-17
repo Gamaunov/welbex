@@ -12,7 +12,16 @@ body {
   line-height: normal;
 }
 
+.mainContent,
+.NotFound,
+.loader{
+  max-width: 1160px;
+  padding: 0 20px;
+  margin: 0 auto 69px;
+}
+
 .mainContent{
+  position: relative;
   max-width: 1160px;
   padding: 0 20px;
   margin: 0 auto 69px;
@@ -24,4 +33,14 @@ body {
     align-items: flex-start;
     gap: 45px;
   }
+}
+
+.NotFound{
+  text-align: center;
+  color: var(--bg-light);
+}
+
+.loader{
+  width: auto;
+  height: auto;
 }

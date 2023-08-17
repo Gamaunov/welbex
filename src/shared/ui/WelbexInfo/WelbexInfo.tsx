@@ -1,5 +1,8 @@
 import { Montserrat } from 'next/font/google';
+import Image from 'next/image';
+import { BallFooter } from '@/shared/assets';
 import { cn } from '@/shared/lib/classNames/classNames';
+import Decoration from '@/shared/ui/Decoration/Decoration';
 import { Button } from '@/shared/ui/Button/Button';
 import cls from './WelbexInfo.module.scss';
 
@@ -12,6 +15,9 @@ const montserrat = Montserrat({ subsets: ['cyrillic'] });
 const WelbexInfo = ({ className }: WelbexInfoProps) => {
 	return (
 		<div className={cn(cls.WelbexInfo, [className])}>
+			<Decoration className={cls.ball}>
+				<Image src={BallFooter} alt="." />
+			</Decoration>
 			<h4 className={cls.title}>
 				Вместе с{' '}
 				<span className={cls.titleAccent}>бесплатной консультацией</span> мы

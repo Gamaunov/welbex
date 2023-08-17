@@ -1,0 +1,31 @@
+.Ball{
+  z-index: -1;
+}
+
+.decorLeft{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 311px;
+  opacity: 0.5;
+  background: var(--bg-light);
+  filter: blur(196px);
+  width: 311px;
+  height: 311px;
+  flex-shrink: 0;
+}
+
+.decorTop{
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 259px;
+  height: 259px;
+  flex-shrink: 0;
+  border-radius: 259px;
+  opacity: 0.5;
+  background: #833AB4;
+  filter: blur(196px);
+}

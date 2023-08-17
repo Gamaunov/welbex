@@ -34,6 +34,7 @@
 }
 
 .nav{
+  position: relative;
   gap: 30px;
   margin-left: -20px;
   @media (max-width: 1080px) {
@@ -47,6 +48,24 @@
   @media (max-width: 460px) {
     font-size: var(--text-small);
     gap: 5px;
+  }
+}
+
+.ballTop{
+  position: absolute;
+  top: -50px;
+  right: -100px;
+    @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.ballBottom{
+  position: absolute;
+  top: 10px;
+  right: 220px;
+    @media (max-width: 768px) {
+    display: none;
   }
 }
 

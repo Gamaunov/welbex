@@ -1,10 +1,17 @@
 .WelbexInfo{
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   @media (max-width: 768px) {
     align-items: flex-start;
   }
+}
+
+.ball{
+  position: absolute;
+  bottom: 0;
+  left: -150px;
 }
 
 .title{
